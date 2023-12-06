@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="module" src="/main.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main>
+      <h1>
+        To-Do-List
+      </h1>
+      <form id="new-task">
+        <h2 id="task-heading" aria-labelledby="new-task">Create A New Task</h2>
+        <label for="task">New-Task:</label>
+        <input id="task" type="text" name='task' placeholder="Add task"/>
+        <label for="notes">Notes:</label>
+        <textarea id="notes" name="notes" cols="50" rows="10"></textarea>
+        <fieldset>
+          <legend>priority levels:</legend>
+          <input type="radio" id="high" name="priority" value="high"/>
+          <label for="high">high</label>
+          <input type="radio" id="medium" name="priority" value="medium"/>
+          <label for="medium">medium</label>        
+          <input type="radio" id="low" name="priority" value="low"/>
+          <label for="low">low</label>  
+        </fieldset>
+        <button>submit</button>
+    </form>
+    <section>
+      <h2>My task</h2>
+      <ul class="myTaskUl"></ul>
+      <h3>no task at the moment... (good job!)</h3>
+    </section>
+    </main>
+  </body>
+</html>
